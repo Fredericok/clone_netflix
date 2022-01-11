@@ -1,0 +1,215 @@
+:root {
+    --vermelho: #e50914;
+    --preta: #1f1e1e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos base */
+
+body {
+    background: var(--preta);
+    font-family: 'arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(167, 166, 166);
+    margin-right: 25px;
+    text-align: left;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+.logo {
+    margin: 12px;
+}
+
+.box-filme img {
+    max-width: 100%;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition:  all 0.3s ease ;
+    transition: all 0.3s ease;
+} 
+
+.box-filme:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 1;
+    background: rgb(19, 13, 13);
+} 
+
+.box-filme:hover img {
+    transform: scale(1.2);
+    transition: all 0.3s ease;   
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    opacity: 0.8;
+    transition: opacity .3s ease;
+}
+
+.box-filme-index {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    opacity: 0.8;
+    transition: opacity .3s ease;
+}
+
+.box-filme div {
+    inset: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.episodio {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.text-item {
+    z-index: 10;
+    text-shadow: 0 0 0 rgba(0,0,0,.5); 
+    background: transparent;
+    text-align: center;
+    justify-content: center;
+    transition: opacity .3s ease;
+    opacity: 1.8;
+    display: inline-flexbox;
+}
+
+/* filme principal */
+.filme-principal {
+    background:linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.30)), url('F:/workspace/Projeto-html-css/clone_netflix/img/cobrakai-principal.jpg');
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.img-nome {
+    width: 280px;
+    margin-top: 10px;
+    margin-left: 500px;   
+}
+
+.img-nome-index {
+    width: 300px;
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-left: 900px;   
+}
+
+.filme-principal-index {
+    background:linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.30)), url('F:/workspace/Projeto-html-css/clone_netflix/img/panico-logo.jpg') no-repeat;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}  
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 15px;
+    margin-top: 350px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.botao-img {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    font-size: 7px;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin-left: 213px;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.container {
+    margin-left: 27px;
+} 
+
+.titulo-temporada {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}    
+
+.temporada {
+    text-decoration: none;
+    color: rgb(228, 70, 70);
+    font-size: 18px;
+    margin-left: 570px;
+    padding: 40px;
+    font-weight: bold;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
+article#video {
+	float: left;
+	padding: 60px;
+	margin-left: 6px;
+    width: 350px;
+    height: 250px; 
+}
+
+.video  {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1em;
+    color: rgb(245, 128, 50);
+}
